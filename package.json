@@ -1,0 +1,21 @@
+{
+  "name": "traductor",
+  "version": "1.0.0",
+  "description": "traductor de voz ingles-espaniol  a voz ingles-espaniol",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "traductor"
+  ],
+  "author": "Jose Guerrero",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/translate": "^2.1.2",
+    "express": "^4.16.4",
+    "jade": "^1.11.0",
+    "socket.io": "^2.1.1"
+  }
+}
