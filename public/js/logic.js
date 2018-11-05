@@ -12,9 +12,7 @@ if (annyang) {
 
 
 socket.on('TxtEnviado', function (data) {
-    responsiveVoice.speak(data);
+    responsiveVoice.speak(data, "Spanish Latin American Female"); 
     $('#span-preview').html(data);
 })
 
-var msg = new SpeechSynthesisUtterance('Hello');
-window.speechSynthesis.speak(msg);
