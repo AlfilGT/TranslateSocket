@@ -17,14 +17,14 @@
 
 <body>
     <center>
-        <h1>Traductor</h1>
+        <h1><i class="material-icons medium">headset_mic</i>Traductor</h1>
     </center>
     <div class="container">
         <span id="span-preview"></span>
         <div class="row">
-            <div class="input-field col s5">
+            <div class="input-field col s3">
                 <select id="LanguageSource">
-                    <option value="" disabled selected>Selecciona un Idioma</option>
+                    <option value="en-US" selected>English(US) en-US</option>
                     <option value='af'>Afrikaans af</option>
                     <option value='eu'>Basque eu</option>
                     <option value='bg'>Bulgarian bg</option>
@@ -107,8 +107,11 @@
                 </select>
                 <label>De: </label>
             </div>
+            <a class="col s1 waves-effect waves-light btn-large" onclick="a()"><i class="material-icons center">sync</i></a>
+
         </div>
-        <button onclick="a()">as</button>
+        
+     
     </div>
 
 

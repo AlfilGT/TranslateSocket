@@ -19,5 +19,6 @@ socket.on('TxtEnviado', function (data) {
 })
 
 function a() {
-    console.log($("#LanguageSource option:selected").val());
+    let lang = $("#LanguageSource option:selected").val();
+    annyang.setLanguage(lang);
 }
