@@ -9,13 +9,14 @@ console.log("Corriendo en el puerto 3000");
 var io = socket(server);
 
 io.sockets.on('connection', function (socket) {
+
     socket.on('start', function (data) {
         console.log('Un user se ha conectado');
     })
 
     socket.on('TxtRecibido', function(data){
         console.log("txtRecibido: "+data);
-            
+
         socket.emit("TxtEnviado", data);
     })
 

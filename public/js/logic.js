@@ -1,6 +1,8 @@
 if (annyang) {
     var commands = {
-        '*tag': function (tag) {socket.emit('TxtRecibido', tag);}
+        '*tag': function (tag) {
+            socket.emit('TxtRecibido', tag);
+        }
     };
     annyang.setLanguage('es-CO');
     annyang.addCommands(commands);
@@ -12,7 +14,10 @@ if (annyang) {
 
 
 socket.on('TxtEnviado', function (data) {
-    responsiveVoice.speak(data, "Spanish Latin American Female"); 
+    responsiveVoice.speak(data, "Spanish Latin American Female");
     $('#span-preview').html(data);
 })
 
+function a() {
+    console.log($("#LanguageSource option:selected").val());
+}
