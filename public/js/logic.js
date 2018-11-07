@@ -8,7 +8,7 @@ if (annyang) {
     annyang.addCommands(commands);
     annyang.debug();
     annyang.start({
-        continuous: true
+        continuous: false
     });
 }
 

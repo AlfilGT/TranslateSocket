@@ -13,9 +13,8 @@
   "author": "Jose Guerrero",
   "license": "ISC",
   "dependencies": {
-    "@google-cloud/translate": "^2.1.2",
     "express": "^4.16.4",
-    "jade": "^1.11.0",
+    "google-translate-api": "github:vitalets/google-translate-api",
     "socket.io": "^2.1.1"
   }
 }
